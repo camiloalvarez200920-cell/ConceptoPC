@@ -1,0 +1,427 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7576382885352126"
+     crossorigin="anonymous"></script>
+    <link rel="icon" type="image/png" href="img/LOGO.png">
+
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Pixel & Power— Guías y Builds</title>
+  <meta name="description" content="Guías claras y builds para elegir, armar y mantener PCs según tu presupuesto y lo que haces." />
+
+  <!-- Fuente Google -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/PC.css">
+</head>
+<body>
+  <div class="container">
+    <!-- HEADER -->
+    <header>
+      <div class="brand">
+        <div class="logo">P&amp;P</div>
+        <div>
+          <h1 data-i18n="brand.title">Pixel & Power</h1>
+          <p data-i18n="brand.subtitle">Elige la PC correcta según lo que haces.</p>
+        </div>
+      </div>
+
+      <nav>
+        <button class="ghost" data-scroll="builds" data-i18n="nav.builds">Builds</button>
+        <button class="ghost" data-scroll="tips" data-i18n="nav.tips">Consejos</button>
+        <button class="btn" data-scroll="wizard" data-i18n="nav.wizard">Te ayudo a elegir</button>
+
+        <!-- SELECTOR DE IDIOMA -->
+        <div class="lang-switcher">
+          <button class="lang-btn active" data-lang="es">ES</button>
+          <button class="lang-btn" data-lang="en">EN</button>
+        </div>
+      </nav>
+    </header>
+
+    <!-- MAIN -->
+    <main>
+      <!-- HERO -->
+      <section class="hero">
+        <h2 data-i18n="hero.title">Guías simples para elegir tu PC, sin tecnicismos raros.</h2>
+        <p data-i18n="hero.text">
+          ¿PC para estudiar, jugar, editar o hacer streaming? Aquí tienes builds claras,
+          consejos y pequeños trucos para que no malgastes tu dinero.
+        </p>
+
+        <div class="cta-row">
+          <button class="btn" data-scroll="builds" data-i18n="hero.cta.builds">Ver builds recomendadas</button>
+          <button class="ghost secondary" data-scroll="wizard" data-i18n="hero.cta.wizard">No sé qué necesito</button>
+        </div>
+
+        <div class="hero-badges">
+          <span data-i18n="hero.badge1">💻 Principiantes bienvenidos</span>
+          <span data-i18n="hero.badge2">🧩 Componentes explicados fácil</span>
+          <span data-i18n="hero.badge3">💡 Consejos para ahorrar</span>
+        </div>
+      </section>
+
+      <!-- PANEL LATERAL -->
+      <aside class="side-panel">
+        <h3 data-i18n="side.title">Filtrar por tipo de uso</h3>
+        <p class="muted" data-i18n="side.text">Elige para qué usarás la PC y te mostramos las builds más adecuadas.</p>
+
+        <div class="filter-group">
+          <button class="chip active" data-type="all" data-i18n="filter.all">Todo</button>
+          <button class="chip" data-type="estudio" data-i18n="filter.study">Estudio / Oficina</button>
+          <button class="chip" data-type="gaming" data-i18n="filter.gaming">Gaming</button>
+          <button class="chip" data-type="edicion" data-i18n="filter.edit">Edición de video / diseño</button>
+          <button class="chip" data-type="streaming" data-i18n="filter.stream">Streaming</button>
+        </div>
+
+        <div class="summary-box">
+          <h4 data-i18n="side.summary.title">Resumen rápido:</h4>
+          <ul>
+            <li data-i18n="side.summary.item1"><strong>RAM:</strong> 8 GB mínimo, 16 GB ideal para gaming/edición.</li>
+            <li data-i18n="side.summary.item2"><strong>SSD:</strong> siempre mejor que solo HDD.</li>
+            <li data-i18n="side.summary.item3"><strong>Fuente de poder:</strong> no escatimes, protege todo tu equipo.</li>
+          </ul>
+        </div>
+      </aside>
+    </main>
+
+    <!-- BUILDS -->
+    <section id="builds" class="section">
+      <div class="section-header">
+        <h3 data-i18n="builds.title">Builds recomendadas</h3>
+        <p class="muted" data-i18n="builds.text">
+          Cada build incluye propósito, componentes clave y una estimación de presupuesto.
+          Haz clic en “Ver detalles” para entender el porqué de cada pieza.
+        </p>
+      </div>
+
+      <div id="builds-list" class="cards">
+        <!-- Se llena desde main.js -->
+      </div>
+    </section>
+
+    <!-- CONSEJOS -->
+    <section id="tips" class="section">
+      <div class="section-header">
+        <h3 data-i18n="tips.title">Consejos esenciales antes de comprar</h3>
+        <p class="muted" data-i18n="tips.text">
+          Antes de gastar, asegúrate de tener claros estos puntos. Te pueden ahorrar mucho dinero.
+        </p>
+      </div>
+
+      <div class="tips-grid">
+        <article class="tip-card">
+          <h4 data-i18n="tips.card1.title">No pagues por potencia que no usarás</h4>
+          <p data-i18n="tips.card1.text">
+            Si solo vas a estudiar, ver clases y navegar, una PC de gama media con SSD te irá
+            mejor que una súper GPU mal acompañada.
+          </p>
+        </article>
+        <article class="tip-card">
+          <h4 data-i18n="tips.card2.title">La fuente de poder es tu seguro</h4>
+          <p data-i18n="tips.card2.text">
+            Una fuente barata y de mala calidad puede dañar todo tu equipo. Asegúrate de que sea
+            de marca confiable y con la potencia suficiente.
+          </p>
+        </article>
+        <article class="tip-card">
+          <h4 data-i18n="tips.card3.title">Piensa en el futuro</h4>
+          <p data-i18n="tips.card3.text">
+            A veces conviene invertir un poco más en placa base y fuente para poder mejorar otros
+            componentes más adelante sin cambiar todo.
+          </p>
+        </article>
+        <article class="tip-card">
+          <h4 data-i18n="tips.card4.title">No te olvides de la ventilación</h4>
+          <p data-i18n="tips.card4.text">
+            Un buen flujo de aire baja temperaturas, reduce ruido y alarga la vida de tus
+            componentes. No es solo estética.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    
+  <!-- COMPONENTES: TIPOS Y CÓMO LEER LOS NOMBRES -->
+<section id="componentes-detallados" class="section">
+  <div class="section-header">
+    <h3>Tipos y cómo leer los nombres (guía rápida por componente)</h3>
+    <p class="muted">
+      Para cada componente verás: familias/tipos, qué significan las letras/números en los modelos
+      y ejemplos prácticos.
+    </p>
+  </div>
+
+  <div class="componentes-det grid">
+    <!-- CPU -->
+    <article class="component-card">
+      <div class="componente-img">
+        <img src="img/CPU.jpg" alt="CPU">
+      </div>
+      <h4>CPU (Procesador)</h4>
+      <p class="muted">Familias, generaciones y letras en los modelos.</p>
+
+      <details>
+        <summary>Tipos / Familias</summary>
+        <ul>
+          <li><strong>AMD Ryzen:</strong> Ryzen 3 / 5 / 7 / 9 (de entrada a entusiasta).</li>
+          <li><strong>Intel Core:</strong> i3 / i5 / i7 / i9 (similar por gamas).</li>
+          <li><strong>APUs:</strong> CPUs con gráficos integrados (útiles si no quieres GPU dedicada).</li>
+        </ul>
+      </details>
+
+      <details>
+        <summary>Cómo leer un nombre (ejemplo: Ryzen 5 5600X)</summary>
+        <ul>
+          <li><strong>Ryzen 5</strong> → gama media.</li>
+          <li><strong>5600</strong> → serie/ generación (5xxx → 5ª gen / Zen 3).</li>
+          <li><strong>X</strong> → variante con frecuencia/rendimiento mejorado.</li>
+        </ul>
+        <p class="mini muted">Letras típicas: X (más rápido), G (gráficos integrados), X3D (caché 3D).</p>
+      </details>
+    </article>
+
+    <!-- GPU -->
+    <article class="component-card">
+      <div class="componente-img">
+        <img src="img/GPU.jpg" alt="GPU">
+      </div>
+      <h4>GPU (Tarjeta gráfica)</h4>
+      <p class="muted">Series, VRAM y significado de sufijos en modelos.</p>
+
+      <details>
+        <summary>Tipos / Familias</summary>
+        <ul>
+          <li><strong>NVIDIA GeForce:</strong> GTX (anterior), RTX (ray-tracing), tarjetas numeradas por generaciones (ex: 20xx, 30xx, 40xx).</li>
+          <li><strong>AMD Radeon:</strong> RX 5000, RX 6000, RX 7000, etc.</li>
+          <li><strong>Segmentos:</strong> entrada / media / alta / entusiasta (según serie y VRAM).</li>
+        </ul>
+      </details>
+
+      <details>
+        <summary>Cómo leer un nombre (ejemplo: RTX 3060 Ti)</summary>
+        <ul>
+          <li><strong>RTX</strong> → soporte ray-tracing (NVIDIA).</li>
+          <li><strong>3060</strong> → generación y posición en la gama (30xx = generación); número mayor = más potente.</li>
+          <li><strong>Ti / Super / XT</strong> → variantes con velocidades o núcleos extras.</li>
+          <li><strong>VRAM</strong> → memoria de video (4GB / 6GB / 8GB / 12GB ... importante para resoluciones altas).</li>
+        </ul>
+      </details>
+    </article>
+
+    <!-- RAM -->
+    <article class="component-card">
+      <div class="componente-img">
+        <img src="img/RAM.jpg" alt="RAM">
+      </div>
+      <h4>RAM (Memoria)</h4>
+      <p class="muted">Tipos (DDR), velocidades y tamaños.</p>
+
+      <details>
+        <summary>Tipos / Familias</summary>
+        <ul>
+          <li><strong>DDR3 / DDR4 / DDR5:</strong> DDR5 es la más nueva; cada generación mejora latencia y ancho de banda.</li>
+          <li><strong>SO-DIMM:</strong> formato para portátiles.</li>
+        </ul>
+      </details>
+
+      <details>
+        <summary>Cómo elegir / entender números</summary>
+        <ul>
+          <li><strong>Capacidad:</strong> 8GB, 16GB, 32GB — más RAM permite multitarea y edición más fluida.</li>
+          <li><strong>Velocidad:</strong> 2400 / 3200 / 5200 MHz — afecta rendimiento en ciertas cargas (gaming/edición).</li>
+          <li><strong>CL (latencia):</strong> número más bajo = menor latencia.</li>
+        </ul>
+      </details>
+    </article>
+
+    <!-- ALMACENAMIENTO -->
+    <article class="component-card">
+      <div class="componente-img">
+        <img src="img/ALMACENAMIENTO.jpg" alt="Almacenamiento">
+      </div>
+      <h4>Almacenamiento (SSD / HDD)</h4>
+      <p class="muted">Tipos (SATA, NVMe), formatos y qué significan.</p>
+
+      <details>
+        <summary>Tipos / Familias</summary>
+        <ul>
+          <li><strong>HDD:</strong> discos mecánicos — barato por GB, más lento.</li>
+          <li><strong>SSD SATA:</strong> rápido y compatible con la mayoría de placas.</li>
+          <li><strong>NVMe / M.2:</strong> mucho más rápido (PCIe), ideal para sistema y proyectos.</li>
+        </ul>
+      </details>
+
+      <details>
+        <summary>Cómo leer un modelo (ej: Samsung 980 Pro 1TB)</summary>
+        <ul>
+          <li><strong>Marca y modelo:</strong> Samsung 980 Pro (gama / generación).</li>
+          <li><strong>1TB:</strong> capacidad.</li>
+          <li><strong>PCIe 3.0 / 4.0 / 5.0:</strong> interfaz — versiones más nuevas ofrecen mayor velocidad (si la placa lo soporta).</li>
+        </ul>
+      </details>
+    </article>
+
+    <!-- PLACA BASE -->
+    <article class="component-card">
+      <div class="componente-img">
+        <img src="img/PLACA.png" alt="Placa base">
+      </div>
+      <h4>Placa base (Motherboard)</h4>
+      <p class="muted">Sockets, chipsets y formatos (ATX, mATX, ITX).</p>
+
+      <details>
+        <summary>Tipos / Familias</summary>
+        <ul>
+          <li><strong>Formato:</strong> ATX (grande), mATX (mediana), ITX (compacta).</li>
+          <li><strong>Socket:</strong> AM4 / AM5 (AMD), LGA1200 / LGA1700 (Intel) — determina qué CPUs son compatibles.</li>
+          <li><strong>Chipset:</strong> define características: cantidad de USB, PCIe lanes, overclocking, etc.</li>
+        </ul>
+      </details>
+
+      <details>
+        <summary>Cómo leer especificaciones</summary>
+        <ul>
+          <li><strong>Socket + chipset:</strong> p.ej. \"AM5 + X670\" → compatible con CPUs AM5 y funciones avanzadas.</li>
+          <li><strong>Ranuras RAM:</strong> 2 o 4 slots y máximo soportado (ej: 128GB).</li>
+        </ul>
+      </details>
+    </article>
+
+    <!-- FUENTE DE PODER -->
+    <article class="component-card">
+      <div class="componente-img">
+        <img src="img/FUENTE-DE-PODER.jpg" alt="Fuente de poder">
+      </div>
+      <h4>Fuente de poder (PSU)</h4>
+      <p class="muted">Watts, certificaciones y modularidad.</p>
+
+      <details>
+        <summary>Tipos / Familias</summary>
+        <ul>
+          <li><strong>Potencia (W):</strong> 450W / 550W / 650W / 750W / más — elige según GPU + CPU.</li>
+          <li><strong>Certificación 80 PLUS:</strong> Bronze / Silver / Gold / Platinum — eficiencia energética.</li>
+          <li><strong>Modular:</strong> Full / Semi / No modular — cables desmontables facilitan el montaje.</li>
+        </ul>
+      </details>
+
+      <details>
+        <summary>Cómo leer un modelo (ej: Corsair RM750x)</summary>
+        <ul>
+          <li><strong>RM750x:</strong> RM (serie), 750 → potencia en W, x → variante de calidad.</li>
+          <li><strong>Recomendación:</strong> elegir marca confiable y dejar margen de ~20–30% sobre consumo estimado.</li>
+        </ul>
+      </details>
+    </article>
+
+    <!-- GABINETE -->
+    <article class="component-card">
+      <div class="componente-img">
+        <img src="img/GABINETE.jpg" alt="Gabinete">
+      </div>
+      <h4>Gabinete (Case)</h4>
+      <p class="muted">Formatos, flujo de aire y compatibilidad.</p>
+
+      <details>
+        <summary>Tipos / Familias</summary>
+        <ul>
+          <li><strong>Formatos:</strong> Full tower, ATX mid-tower, mATX, ITX compact.</li>
+          <li><strong>Ventilación:</strong> front intake, top exhaust, filtros para polvo.</li>
+          <li><strong>Compatibilidad:</strong> longitudes de GPU, radiadores para refrigeración líquida.</li>
+        </ul>
+      </details>
+
+      <details>
+        <summary>Qué mirar en la ficha técnica</summary>
+        <ul>
+          <li><strong>Soporte GPU(max mm):</strong> longitud máxima de la tarjeta gráfica.</li>
+          <li><strong>Soporte radiador:</strong> dimensiones y posiciones (front/top/rear).</li>
+        </ul>
+      </details>
+    </article>
+
+    <!-- REFRIGERACIÓN -->
+    <article class="component-card">
+      <div class="componente-img">
+        <img src="img/REFRIGERACION.jpg" alt="Refrigeración">
+      </div>
+      <h4>Refrigeración</h4>
+      <p class="muted">Por aire vs líquida y qué significan las referencias.</p>
+
+      <details>
+        <summary>Tipos / Familias</summary>
+        <ul>
+          <li><strong>Air coolers:</strong> disipadores con ventilador (buena relación precio/rendimiento).</li>
+          <li><strong>AIO (All-In-One):</strong> refrigeración líquida cerrada (120/240/360 mm según radiador).</li>
+          <li><strong>Custom loop:</strong> circuitos líquidos personalizados (más rendimiento, más trabajo).</li>
+        </ul>
+      </details>
+
+      <details>
+        <summary>Qué mirar al elegir</summary>
+        <ul>
+          <li><strong>Tamaño del radiador:</strong> 120/240/360 mm → mayor superficie = mejor disipación.</li>
+          <li><strong>Compatibilidad con socket:</strong> verificar anclajes para tu CPU.</li>
+        </ul>
+      </details>
+    </article>
+  </div>
+</section>
+
+
+
+    <!-- WIZARD -->
+    <section id="wizard" class="section wizard">
+      <div class="wizard-card">
+        <h3 data-i18n="wizard.title">¿No sabes qué PC necesitas?</h3>
+        <p class="muted" data-i18n="wizard.text">
+          Responde estas preguntas rápidas y te sugiero el tipo de build más adecuada.
+        </p>
+
+        <div class="wizard-step">
+          <label for="usage" data-i18n="wizard.usage.label">¿Qué harás principalmente con tu PC?</label>
+          <select id="usage">
+            <option value="estudio" data-i18n="wizard.usage.study">Estudio / Oficina</option>
+            <option value="gaming" data-i18n="wizard.usage.gaming">Gaming</option>
+            <option value="edicion" data-i18n="wizard.usage.edit">Edición de video / diseño</option>
+            <option value="streaming" data-i18n="wizard.usage.stream">Streaming + Gaming</option>
+          </select>
+        </div>
+
+        <div class="wizard-step">
+          <label for="budget" data-i18n="wizard.budget.label">Presupuesto aproximado (USD):</label>
+          <input type="range" id="budget" min="300" max="2000" step="100" value="800">
+          <div class="range-value"><span id="budget-value">800</span> USD</div>
+        </div>
+
+        <button id="wizard-btn" class="btn full" data-i18n="wizard.button">Sugerir tipo de PC</button>
+
+        <div id="wizard-result" class="wizard-result hidden">
+          <!-- Se llena con JS -->
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+        <!-- FOOTER -->
+    <footer>
+  <p class="muted" data-i18n="footer.text">
+    Pixel &amp; Power — Guías simples para que la tecnología trabaje para ti, no al revés.
+  </p>
+  <p class="muted copyright" data-i18n="footer.copy">
+    © 2025 Pixel &amp; Power. Todos los derechos reservados.
+  </p>
+  <p class="muted">
+    <a href="politica.html">Política de Privacidad</a>
+  </p>
+</footer>
+
+
+  </div>
+
+  <!-- JS -->
+  <script src="js/PC.js"></script>
+</body>
+</html>
