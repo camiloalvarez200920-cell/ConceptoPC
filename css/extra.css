@@ -1,0 +1,35 @@
+/* ===== PANEL DE AJUSTES ===== */
+.settings{position:fixed;top:0;right:0;height:100%;width:min(340px,92vw);padding:18px;background:#0b1220;border-left:1px solid var(--glass-border);transform:translateX(105%);transition:transform .25s;z-index:60;overflow:auto;box-shadow:-20px 0 50px rgba(0,0,0,.5)}
+.settings.open{transform:none}
+.set-ov{position:fixed;inset:0;background:rgba(2,6,23,.55);opacity:0;pointer-events:none;transition:opacity .25s;z-index:59}
+.set-ov.open{opacity:1;pointer-events:auto}
+.set-h{display:flex;justify-content:space-between;align-items:center}
+.set-h h3{margin:0;font-size:18px}
+.set-row{margin-top:16px}
+.set-row>span{display:block;font-size:13px;margin-bottom:6px;color:var(--muted)}
+.seg{display:flex;gap:4px;padding:3px;border-radius:999px;border:1px solid var(--glass-border)}
+.seg button{flex:1;border:0;background:transparent;color:var(--muted);padding:6px 8px;border-radius:999px;font-size:12px;font-weight:600;cursor:pointer}
+.seg button.active{background:linear-gradient(135deg,#38bdf8,#22c55e);color:#0f172a}
+#set-reset{margin-top:22px;width:100%;justify-content:center}
+.settings .mini{font-size:12px;margin-top:12px}
+.component-card .mini{margin-top:10px}
+.component-card li{margin-top:4px}
+
+/* ===== TAMAÑO DE TEXTO / VISTA / CONTRASTE / MOVIMIENTO ===== */
+html[data-fs=sm] body{zoom:.92}
+html[data-fs=lg] body{zoom:1.12}
+html[data-view=list] .cards,html[data-view=list] .componentes-det{grid-template-columns:1fr!important}
+html[data-contrast=high]{--muted:#d5deea}
+html[data-contrast=high] :is(.card,.component-card,.tip-card,.hero,.side-panel,.wizard-card){border-color:#e2e8f0}
+html[data-motion=off] *{transition:none!important;animation:none!important}
+
+/* ===== TEMA CLARO ===== */
+html[data-theme=light]{--muted:#475569;--glass-border:rgba(15,23,42,.14);--glass-2:rgba(15,23,42,.06);--glass-3:rgba(15,23,42,.03);--accent-soft:rgba(16,185,129,.16)}
+html[data-theme=light][data-contrast=high]{--muted:#1e293b}
+html[data-theme=light] body{background:linear-gradient(180deg,#f8fafc,#e2e8f0);color:#0f172a}
+html[data-theme=light] :is(.hero,.side-panel,.card,.tip-card,.wizard-card,.component-card,.summary-box,.wizard-result,.settings,.lang-switcher,.hero-badges span,.card-tag,select){background:#fff;color:#0f172a;border-color:rgba(15,23,42,.14);box-shadow:0 6px 20px rgba(15,23,42,.08)}
+html[data-theme=light] .card-meta strong,html[data-theme=light] .badge-type{color:#047857}
+html[data-theme=light] .chip:hover,html[data-theme=light] .ghost:hover{color:#0f172a}
+html[data-theme=light] .chip.active{color:#064e3b}
+html[data-theme=light] .lang-btn{color:#334155}
+html[data-theme=light] .set-ov{background:rgba(15,23,42,.3)}
